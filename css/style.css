@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #333333;
+    font-size: 0.75rem;
+}
+
+p {
+    font-size: 0.75rem;
+    color: #333333;
+}
+
+.title {
+    font-size: 0.85rem;
+}
+
+.date {
+    font-size: 0.65rem;
+}
+
+.resume-tint {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-popover {
+    cursor: pointer;  
+    --bs-popover-max-width: 650px;
+    --bs-popover-border-color: #333333;
+    --bs-popover-header-bg: white;
+    --bs-popover-header-color: #333333;
+    --bs-popover-body-padding-x: 0.5rem;
+    --bs-popover-body-padding-y: .2rem;
+    --bs-popover-header-padding-x: 0.5rem;
+    --bs-popover-header-padding-y: .2rem;
+    --bs-popover-header-font-size: .85rem;
+    font-size: 0.75rem;
+}
+
+.btn-outline {
+    transition: ease-out 0.2s;
+    margin: 0.2rem 0;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    background-color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+.slide-right {
+	animation: slide-right 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: -10;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#scroll {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  height: 5px;
+  background-image: linear-gradient(120deg, #F27121, #E94057, #8A2387);
+  width: 0;
+  transition: width 0.1s ease;
+}
