@@ -20,3 +20,20 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 const popover = new bootstrap.Popover('.popover-dismiss', {
   trigger: 'focus'
 })
+
+
+// if I want nicer animation I should use opacity
+// and not display
+function switchOnChange(e) {
+  var elms = document.getElementsByClassName("additional-content");
+
+  Array.from(elms).forEach((x) => {
+    console.log(x);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      x.style.transition = "1s";
+    } else {
+      x.style.display = "none";
+    }
+  })
+}

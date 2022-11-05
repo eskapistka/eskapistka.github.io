@@ -12,11 +12,17 @@
   </head>
   <body>
     <div id="scroll"></div>
+    <div id="switch-div">
+        <div class="form-check form-switch form-check-reverse m-3">
+          <input class="form-check-input" type="checkbox" id="additionalContentCheckbox" onchange="switchOnChange(event)">
+          <label class="form-check-label" for="additionalContentCheckbox">I want more details:</label>
+        </div>
+    </div>
     <div class="container-fluid mb-5"> 
       <main>
         <div class="row px-5">
             <div class="d-flex align-items-start">
-              <div class="sticky-top pt-5 nav col-2 flex-column nav-pills mx-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="sticky-top pt-2 nav col-2 flex-column nav-pills mx-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <h4 class="pb-3">Wiktoria <br>Kowal</h4>
                   <div class="btn btn-outline text-start active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
                     <i class="bi bi-file-person-fill"></i>  Resume
@@ -31,7 +37,7 @@
                 </div>
                 <p class="my-2">this whole page is still work in progess, please keep it in mind, I know it lacks some good mobile layout (yet)</p>
               </div>
-              <div class="col tab-content container pt-5 mb-5" id="v-pills-tabContent">
+              <div class="col tab-content container pt-2 mb-5" id="v-pills-tabContent">
                 <div class="tab-pane fade show active slide-right" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
             <!-- my cv content goes here -->
                     <div class="row">
@@ -67,7 +73,9 @@
                                      data-bs-title="more details:" 
                                      data-bs-content="most adhd thing ever - speaking in brackets">click here!
                                   </a>
-                                  
+                              </p>
+                              <p class="additional-content slide-right" style="display: none;">
+                                additional content here
                               </p>
                           </div>
                       </div>
