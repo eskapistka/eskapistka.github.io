@@ -28,7 +28,6 @@ function switchOnChange(e) {
   var elms = document.getElementsByClassName("additional-content");
 
   Array.from(elms).forEach((x) => {
-    console.log(x);
     if (x.style.display === "none") {
       x.style.display = "block";
       x.style.transition = "1s";
