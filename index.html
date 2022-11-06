@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">    
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <div id="scroll"></div>
     <div id="switch-div" class="sticky-top pt-1">
         <div class="form-check form-switch form-check-reverse m-3">
@@ -18,7 +18,7 @@
           <label class="form-check-label" for="additionalContentCheckbox">I want more details:</label>
         </div>
     </div>
-    <div class="container-lg mb-5"> 
+    <div class="container-lg"> 
       <main>
         <div class="row px-5"> 
               <div class="pt-sm-2 nav flex-column nav-pills col-sm-3 px-md-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -140,6 +140,42 @@
                                       working with pupils aged 8-18; breaking complex concepts down into simple steps; <strong>helping pupils feel confident speaking English;</strong> helping pupils learn how to approach exam problems; 
                                   </p> 
                                 </div> 
+
+                                <div class="experience-entry additional-content slide-right" style="display: none;">
+                                  <p class="d-flex justify-content-between align-items-center">
+                                      <span class="title"><strong>Sizeer, Marketing Investment Group</strong> — Customer Advisor</span>
+                                      <span class="date">06.2021 - 09.2021</span>
+                                  </p>  
+                                  <p class="description">
+                                      providing support and comprehensive product information to customers; <strong>working with sales KPI's such as Revenue Per Client and Average Purchase Value;</strong>
+                                  </p> 
+                                </div> 
+
+                                <div class="experience-entry additional-content slide-right" style="display: none;">
+                                  <p class="d-flex justify-content-between align-items-center">
+                                      <span class="title"><strong>K2 English School</strong> — Substitute English Teacher</span>
+                                      <span class="date">01.2020 - 02.2020</span>
+                                  </p>  
+                                  <p class="description">
+                                      following lesson plans provided by the regular teacher to create cohesive and consistent learning experience for pupils; <strong>managing classroom (pupils aged 10-12) effectively to encourage student participation, minimize distractions and maintain a positive learning environment;</strong>
+                                  </p> 
+                                </div> 
+
+                                <div class="experience-entry additional-content slide-right" style="display: none;">
+                                  <p class="d-flex justify-content-between align-items-center">
+                                      <span class="title"><strong>freelance</strong> — Graphic Designer</span>
+                                      <span class="date">2016 - 2021</span>
+                                  </p>  
+                                  <p class="description">
+                                      developing illustrations, logos and other designs using software such as Adobe Photoshop or by hand; <strong>conceptualizing visuals based on requirements; preparing designs for printing according to requirements, for example: roll up banners, lanyards, stickers, pens;</strong> <br><a class="link-dark" href="https://www.facebook.com/eskapistka.art">--> old fanpage here</a>
+                                  </p> 
+                                </div> 
+
+                                <div class="experience-entry additional-content slide-right" style="display: none;">
+                                  <p class="description">
+                                      <small>+ a few other retail jobs</small>
+                                  </p> 
+                                </div> 
                                   
                               </div>
                           </div>
@@ -155,7 +191,7 @@
                           <div class="col-lg-8 px-0">
                             <div class="education-entry mb-4">
                               <p class="d-flex justify-content-between align-items-center">
-                                  <span class="title"><strong>University of Leeds</strong> — BSc Computer Science with Artificial Intelligence (year in industry)</span>
+                                  <span class="title"><strong>University of Leeds</strong> — BSc Computer Science with Artificial Intelligence (Industrial)</span>
                                   <span class="date">09.2020 - current</span>
                               </p>  
                               <p class="description">
@@ -185,8 +221,15 @@
                           <div class="col-lg-8 px-0">
                             <div class="mb-4"> 
                               <p class="description">
-                                  <strong>Cambridge English: Advanced (CAE) Grade A;</strong> Circl Leadership Programme (10/2022 - current); Red Hat Student Education Programme Kubernetes Bootcamp (08/2022); Data Visualization with Matplotlib Bootcamp with DPhi (11/2021); <strong>FastFutures programme graduate (04/2021);</strong> MyOXperience laureate (2019); Alice Envisions the Future laureate (2018); 
+                                  <strong>Cambridge English: Advanced (CAE) Grade A;</strong> Circl Leadership Programme (10/2022 - current); Red Hat Student Education Programme Kubernetes Bootcamp (08/2022); Data Visualization with Matplotlib Bootcamp with DPhi (11/2021); <strong>FastFutures programme graduate (04/2021);</strong> <a class="link-dark" href="https://www.youtube.com/watch?v=_lqqAQlrxCQ&ab_channel=TDJFoundation">MyOXperience laureate (2019);</a> Alice Envisions the Future AI Bootcamp in Athens (2018); 
                               </p> 
+                              <p class="additional-content slide-right" style="display: none;">
+                                <a class="link-dark" href="https://www.youtube.com/watch?v=oz6IJMO6kK4&t=1s&ab_channel=ShowCode">attending Athena Hackathon 2022; </a>
+                                
+                                <a class="link-dark" href="https://www.youtube.com/watch?v=pMX5MOIFC1c&t=62s&ab_channel=MicrosoftEducation">attending Alice Envisions the Future - Girls in AI Hackathon (2020);</a>
+
+                                1st place in a best business idea organized by Aktywator Słupsk (11/2020);
+                              </p>
                             </div> 
                           </div>
                       </div>
@@ -208,7 +251,6 @@
                             </div> 
                           </div>
                       </div>
-                      <hr>
                     </div> 
                     
             <!-- my cv content ends here -->        
@@ -219,31 +261,48 @@
                 </div>
                   
                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                    ...
+                  <div class="row slide-right">
+                    <div class="row my-3">
+                        <div class="col-lg-4 px-0">
+                            <strong><p>Contact</p></strong>
+                        </div>
+                        <div class="col-lg-8 px-0">
+                          <div class="mb-4"> 
+                            <p class="description">
+                              Nice to see you here!
+                              <br><br>
+                              You can contact me on <a class="link-dark" href="http://linkedin.com/in/wiktoria-kowal">linkedin</a>
+                              <br><br>
+                              Or use this email
+                              <a href="mailto:kow.wiktoria@gmail.com" target="_blank" class="link-dark">kow.wiktoria@gmail.com</a>
+                            </p> 
+                          </div> 
+                        </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
         </div>      
       </main>
-
-      <footer class="py-2 px-5 mt-5 text-muted fixed-bottom bg-white shadow-lg">
-          <div class="row">
-            <div class="col m-3">
-              <a class="link-dark" href="http://linkedin.com/wiktoria-kowal">linkedin.com/wiktoria-kowal</a><br>
-              <a class="link-dark" href="http://github.com/eskapistka">github.com/eskapistka</a>
-            </div>
-            <div class="col m-3">
-              <a href="#my-description" class="link-dark float-end" id="btn-back-to-top">
-                  scroll back to top <i class="bi bi-arrow-up"></i>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col mx-3">
-                <p class="text-muted ml-3"><small>@Wiktoria Kowal - created 3rd Nov 22</small></p>
-            </div>
-          </div>
-      </footer>
     </div>
+    <footer class="px-5 text-muted bg-white shadow-lg mt-auto">
+      <div class="row">
+        <div class="col m-3">
+          <a class="link-dark" href="http://linkedin.com/in/wiktoria-kowal">linkedin.com/wiktoria-kowal</a><br>
+          <a class="link-dark" href="http://github.com/eskapistka">github.com/eskapistka</a>
+        </div>
+        <div class="col m-3">
+          <a href="#my-description" class="link-dark float-end" id="btn-back-to-top">
+              scroll back to top <i class="bi bi-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mx-3">
+            <p class="text-muted ml-3"><small>@Wiktoria Kowal - created Nov 22</small></p>
+        </div>
+      </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
